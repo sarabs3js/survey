@@ -1,0 +1,31 @@
+
+
+.question3 {
+    background-color: #65B867;
+}
+
+.question3 button {
+    border: 6px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.question3 button:hover {
+    border-color: aqua;
+}
+
+
+.radiobutton{
+    display: flex;
+    font-size: 40px;
+}
+
+.seperate{
+    padding-left:50px;
+
+}
+
+.img{
+    height:15vh;
+    width: 10vw;
+}
