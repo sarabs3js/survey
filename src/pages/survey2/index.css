@@ -18,19 +18,3 @@
 .question2 button:hover {
     border-color: aqua;
 }
-
-
-.radiobutton{
-    display: flex;
-    font-size: 40px;
-}
-
-.seperate{
-    padding-left:50px;
-
-}
-
-.img{
-    height:15vh;
-    width: 10vw;
-}

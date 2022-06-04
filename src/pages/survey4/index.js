@@ -9,25 +9,25 @@ const Survey = ({ showResults, next }) => {
   const updatedResult = () => {};
   return (
     <div className="question question3">
-      <h1 class="header">Favourite Operating System?</h1>
+      <h1 className="header">Favourite Operating System?</h1>
 
       {showResults && <div> Show Results</div>}
       {next && <button onClick={next}>Next</button>}
 
-      <div class="radiobutton">
-        <div class="seperate">
+      <div className="radiobutton">
+        <div className="seperate">
           <button onClick={() => updatedResult(1)}>
-          <img  class="img" src={windows} alt="" /><br />Windows
+          <img  className="img" src={windows} alt="" /><br />Windows
           </button>
         </div>
-        <div class="seperate">
+        <div className="seperate">
           <button onClick={() => updatedResult(2)}>
-          <img  class="img" src={linux} alt="" /><br />Linux
+          <img  className="img" src={linux} alt="" /><br />Linux
           </button>
         </div>
-        <div class="seperate">
+        <div className="seperate">
           <button onClick={() => updatedResult(3)}>
-          <img  class="img" src={apple} alt="" /><br />Mac
+          <img  className="img" src={apple} alt="" /><br />Mac
           </button>
         </div>
       </div>

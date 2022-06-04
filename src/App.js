@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import QuestionOne from './pages/survey1/SurveyQuestionOne';
 import QuestionTwo from './pages/survey2/';
 import QuestionThree from './pages/survey3/';
@@ -10,8 +10,8 @@ import Welcome from './pages/surveyWelcome';
 
 const App = () => {
   // const [question, setQuestion] = useState(1);
-  const surveyPage = useSurvey();
-  // const [surveyPage, setSurveyPage] = useState(0);
+  // const surveyPage = useSurvey();
+  const [surveyPage, setSurveyPage] = useState(3);
   useEffect(() => {
   }, []);
 
@@ -20,21 +20,21 @@ const App = () => {
   }
 
   if (surveyPage === 1) {
-    return <QuestionOne next={() => openNextPage(2)} />
+    return <QuestionOne  /> 
   }
   if (surveyPage === 2) {
-    return <QuestionTwo next={() => openNextPage(3)} />
+    return <QuestionTwo  /> 
   }
   if (surveyPage === 3) {
-    return <QuestionThree next={() => openNextPage(4)} />
+    return <QuestionThree />
   }
   if (surveyPage === 4) {
-    return <QuestionFour next={() => openNextPage(5)} />
+    return <QuestionFour />
   }
   if (surveyPage === 5) {
-    return <QuestionFive next={() => openNextPage(0)} />
+    return <QuestionFive />
   }
-  return <Welcome next={() => openNextPage(1)} />
+  return <Welcome />
 }
 
 export default App;

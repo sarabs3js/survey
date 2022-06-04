@@ -12,7 +12,6 @@ const useUpdateSurvey = () => {
         console.log(`/surveyResult/${surveyId}/${selectedOption}`);
         const dbRef = ref(db, `/surveyResult/${surveyId}/${selectedOption}`);
         const count = await getData(dbRef);
-        console.log(count, dbRef);
         await set(dbRef, count+1);
     }
 
