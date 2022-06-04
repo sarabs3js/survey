@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import QuestionOne from './pages/survey1/SurveyQuestionOne';
 import QuestionTwo from './pages/survey2/';
 import QuestionThree from './pages/survey3/';
@@ -10,8 +10,8 @@ import Welcome from './pages/surveyWelcome';
 
 const App = () => {
   // const [question, setQuestion] = useState(1);
-  // const surveyPage = useSurvey();
-  const [surveyPage, setSurveyPage] = useState(0);
+  const surveyPage = useSurvey();
+  // const [surveyPage, setSurveyPage] = useState(0);
   useEffect(() => {
   }, []);
 

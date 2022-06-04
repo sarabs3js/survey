@@ -1,6 +1,6 @@
 
 import { initializeApp } from 'firebase/app';
-import { getDatabase, get, onValue, ref, query } from '@firebase/database';
+import { getDatabase } from '@firebase/database';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDLv4aGkI_dP5Hatw94OI1R3vn5Zo1etjs",
@@ -14,10 +14,4 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getDatabase(app);
-const dbRef = ref(db, "/players")
-
-async function getData () {
-    const usersSnapshot = await get(query(dbRef))
-    console.log("usersSnapshot", usersSnapshot.val())
-}
 
