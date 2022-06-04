@@ -8,8 +8,6 @@ const Welcome = ({next}) => {
     {next && <button onClick={next}>Next</button>}
       <h1 class="header">Welcome to GDG Chandigarh</h1>
       <h2>Survey will start in a moment!</h2>
-
-      
     </div>
   );
 };

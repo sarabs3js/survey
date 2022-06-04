@@ -15,22 +15,26 @@ const App = () => {
   useEffect(() => {
   }, []);
 
+  const openNextPage = (id) => {
+    // setSurveyPage(id);
+  }
+
   if (surveyPage === 1) {
-    return <QuestionOne next={() => setSurveyPage(2)} />
+    return <QuestionOne next={() => openNextPage(2)} />
   }
   if (surveyPage === 2) {
-    return <QuestionTwo next={() => setSurveyPage(3)} />
+    return <QuestionTwo next={() => openNextPage(3)} />
   }
   if (surveyPage === 3) {
-    return <QuestionThree next={() => setSurveyPage(4)} />
+    return <QuestionThree next={() => openNextPage(4)} />
   }
   if (surveyPage === 4) {
-    return <QuestionFour next={() => setSurveyPage(5)} />
+    return <QuestionFour next={() => openNextPage(5)} />
   }
   if (surveyPage === 5) {
-    return <QuestionFive next={() => setSurveyPage(0)} />
+    return <QuestionFive next={() => openNextPage(0)} />
   }
-  return <Welcome next={() => setSurveyPage(1)} />
+  return <Welcome next={() => openNextPage(1)} />
 }
 
 export default App;
