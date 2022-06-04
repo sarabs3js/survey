@@ -87,9 +87,6 @@ const QuestionOne = ({ next }) => {
               Butter Scotch
             </button>
           </div>
-          <div className="seperate">
-            <button onClick={() => updatedResult(4)}>Other</button>
-          </div>
         </div>
       )}
     </div>
