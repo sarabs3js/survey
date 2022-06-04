@@ -14,4 +14,9 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const db = getDatabase(app);
+// const dbRef = ref(db, "/players")
 
+// async function getData () {
+//     const usersSnapshot = await get(query(dbRef))
+//     console.log("usersSnapshot", usersSnapshot.val())
+// }
