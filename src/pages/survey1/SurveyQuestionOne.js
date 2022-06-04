@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import BarChart from 'react-easy-bar-chart';
 import vanilla from "./vanilla.webp";
 import choclate from "./choclate.jpg";
 import butter from "./butter.webp";
@@ -7,6 +6,7 @@ import butter from "./butter.webp";
 import "./index.css";
 import useUpdateSurvey from "../../hooks/updateSurvey";
 import useResults from "../../hooks/useResults";
+import Bar from "../../components/Bar";
 
 const QuestionOne = ({ next }) => {
     const results = useResults(1);
@@ -53,13 +53,14 @@ const QuestionOne = ({ next }) => {
   return (
     <div className="question1">
       <h1 class="header">What's your favourite icecream?</h1>
+      <div style={{ display: 'flex' }}>
+      </div>
 
-      {showResults && <BarChart 
-          yAxis="Values"
-          height={400}
-          width={800}
-          data={data}
-        />}
+      {showResults && (
+          <div style={{ display: 'flex' }}>
+            {data.map(d => <Bar text={d.title} result={d.value} color={d.color} />)}
+        </div>
+      )}
       {next && <button onClick={next}>Next</button>}
 
       {!showResults && <div class="radiobutton">

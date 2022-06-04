@@ -1,0 +1,13 @@
+.barGraph {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.barGraph .graph {
+    background-color: aqua;
+    height: 30px;
+    width: 60px;
+}
