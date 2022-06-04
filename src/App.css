@@ -56,4 +56,31 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.header {
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+
+}
+
+.radiobutton{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    align-items: center;
+}
+.seperate {
+    margin-bottom: 20px;
+    width:30vw;
+}
+.seperate button {
+  width: 100%;
+  height: 100%;
+}
+
+
+.img{
+    width:15vw;
 }
